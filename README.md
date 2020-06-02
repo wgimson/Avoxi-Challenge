@@ -44,3 +44,19 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Running the project
 
     $ npm start
+
+    now open a browser and navigate to `http:localhost:3000/verifyIp/{id}`, and supply either 1, 2, or 3 as the id (these are the 'userIds' I mocked as a multi-client db..)
+
+    some examples outputs...
+
+    `http://localhost:3000/verifyIp/1`
+
+    ...should return true, since that users IP address is whitelisted..
+
+    `http://localhost:3000/verifyIp/13`
+
+    ...should return `unauthorized`, since there is no userId of 13 in the mocked db..
+
+    `http://localhost:3000/verify`
+
+    ...should return a 404 error as this is not a valid route in the app

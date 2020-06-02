@@ -1,3 +1,4 @@
+// and this is our microservice
 const request = require('request');
 const WebServiceClient = require('@maxmind/geoip2-node').WebServiceClient;
 const client = new WebServiceClient('323655', 'ZvltVThbumPhghzR');
