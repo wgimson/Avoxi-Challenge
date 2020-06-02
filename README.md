@@ -60,3 +60,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     `http://localhost:3000/verify`
 
     ...should return a 404 error as this is not a valid route in the app
+
+## Running as Docker Contianer
+
+run `docker build -t <user-name>/<project-name>`
