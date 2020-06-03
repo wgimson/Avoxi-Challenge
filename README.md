@@ -51,7 +51,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
     `http://localhost:3000/verifyIp/1`
 
-    ...should return true, since that users IP address is whitelisted..
+    ...should return true, since by default the project is set up to make requests from the same domain as the node server - we're sort of mocking a microservice here - in the real world ip-service would be deployed to it's own URL, and then you would get a true or false responsed based on the whitelisted countries for that client..
 
     `http://localhost:3000/verifyIp/13`
 
