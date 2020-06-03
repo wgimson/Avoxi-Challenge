@@ -64,7 +64,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Running as Docker Contianer
 
 run 
-`docker build -t <user-name>/<project-name>`
+`docker build -t <user-name>/<project-name> .`
 `docker run -p <public-port>:3000 -d <user-name>/<project-name>`
 
-the application is now accessible on the <public-port>
+the application is now accessible via Docker on the <public-port>
